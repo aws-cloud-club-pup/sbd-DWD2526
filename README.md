@@ -1,9 +1,9 @@
 # SBD – Department of Web Development (DWD) 2526
 ## AWS Cloud Club PUP
 
-This repository contains the official workshop materials for the **Skill Builder Division – Department of Web Development (DWD)** for the **2526 cycle**.
+This repository contains the official workshop materials for the **Department – Department of Web Development (DWD)** for the term **2526**.
 
-It includes starter files used during live sessions, activity task files, and supporting resources for each workshop.
+It includes starter files used during live sessions and activity task files.
 
 ---
 
@@ -34,7 +34,7 @@ Follow the steps below to properly use this repository for workshop activities:
 
 *This will generate an independent copy under your GitHub account.*
 
-### 2. Clone Your Repository Locally (Recommended)
+### 2. Clone Your Repository Locally 
 After creating your copy, clone it to your local machine:
 
 ```bash
