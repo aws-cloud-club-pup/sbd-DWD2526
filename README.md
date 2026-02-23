@@ -1,80 +1,123 @@
 # SBD – Department of Web Development (DWD) 2526
-## AWS Cloud Club PUP
+### AWS Cloud Club PUP
 
-This repository contains the official workshop materials for the **Skill Builder Division – Department of Web Development (DWD)** for the **2526 cycle**.
+Welcome to the official repository of the Skill Builder Division – Department of Web Development (DWD) for the 2526 cycle.
 
-It includes starter files used during live sessions, activity task files, and supporting resources for each workshop.
+This repository contains the official starter templates used during live workshop sessions throughout the term. 
+
+> **Note:** All activity instructions, assignments, submission requirements, and deployment guides are provided directly through the **LMS**.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
-Each workshop is organized using the following format:
+Each workshop follows a standardized naming format:
 
 `YYYY-MM_Workshop-Title/`
 
-Inside each workshop folder:
+Inside each workshop folder, you will find:
+*   `STARTER/` – Starter files used during the live workshop session.
 
-*   **`STARTER/`** – Live demo starter files used during the workshop session
-*   **`TASKS/`** – Official activity instructions and editable files
+*This repository is intended strictly as a central source for workshop starter templates only.*
 
 ---
 
-## 🚀 Getting Started
+## General Workshop Workflow
 
-Follow the steps below to properly use this repository for workshop activities:
+To keep things consistent across all modules, please follow the process outlined below.
 
-### 1. Create Your Own Copy
-1.  Click the **“Use this template”** button located at the top of this repository.
-2.  On the repository creation page:
-    *   Set yourself as the **owner**.
-    *   Choose an appropriate **repository name**.
-    *   Set visibility according to the current submission guidelines (**Public** is recommended unless stated otherwise).
-3.  Click **Create repository**.
+### During the Workshop
 
-*This will generate an independent copy under your GitHub account.*
+**1. Obtain the Starter Files**
+You may choose one of the following methods to get the files on your local machine:
 
-### 2. Clone Your Repository Locally (Recommended)
-After creating your copy, clone it to your local machine:
-
+**Option A: Clone the Repository (If Git is Installed)**
 ```bash
-git clone <your-repository-url>
-cd <your-repository-name>
+git clone https://github.com/sbd-DWD2526/<repository-name>.git
+cd <repository-name>
+```
+Navigate to the appropriate workshop folder: `YYYY-MM_Workshop-Title/STARTER/`
+
+**Option B: Download as ZIP (If You Are Not Using Git Locally)**
+1. Click the green **Code** button on GitHub.
+2. Select **Download ZIP**.
+3. Extract the files to your local machine.
+4. Open the correct workshop folder in your code editor.
+
+**2. Build the Project**
+Work inside the `STARTER/` directory during the live session. Ensure that your project runs properly on your local machine before the session ends.
+
+---
+
+### After the Workshop
+
+Each participant must create their own personal GitHub repository for submission and deployment.
+
+### Personal Repository Naming Format
+To maintain consistency across all workshops, please use the following naming convention for your personal repositories:
+
+`DWD2526-<WorkshopShortName>-<Surname>`
+
+**Examples:**
+*   `DWD2526-TaskCraft-Simara`
+*   `DWD2526-React-DelaCruz`
+*   `DWD2526-API-Reyes`
+
+*(Note: If necessary, you may add your first initial, e.g., `DWD2526-React-SimaraD`)*
+
+> **Important:** This naming format will be used throughout the entire 2526 cycle.
+
+### Uploading Your Project
+
+If you downloaded the ZIP file, you may upload your project files directly through the GitHub web interface into your newly created repository.
+
+If you are using Git locally, initialize and push your repository using the terminal:
+```bash
+git init
+git add .
+git commit -m "Initialize workshop project"
+git branch -M main
+git remote add origin https://github.com/<your-username>/<repository-name>.git
+git push -u origin main
 ```
 
-*Alternatively, you may download the repository as a ZIP file if you are not using Git locally.*
-
-### 3. Navigate to the Workshop Folder
-Locate the relevant workshop folder using the naming format: `YYYY-MM_Workshop-Title`
-
-Inside the folder:
-* Review the TASKS/ directory carefully.
-* Read the provided instructions file.
-* Work on the required files as specified.
-
-### 4. Complete the Activity
-Implement the required features and modifications in your own repository copy.
-
-Ensure:
-* Your files are properly organized.
-* Your commits are clear and meaningful.
-* Your project runs as intended.
-
-### 5. Push Your Changes
-If working locally, commit and push your changes:
-
+Continue using the standard workflow as you make progress on post-workshop activities:
 ```bash
 git add .
-git commit -m "feat: implement required features for <Workshop Name>"
-git push origin main
+git commit -m "Describe your update"
+git push
 ```
 
-### 6. Submission
-Submit your repository link via the designated LMS platform or the officially announced submission channel.
+---
 
-⚠️ **IMPORTANT**: This repository is for workshop materials only. **Do not submit Pull Requests to this repository.**
+## Activities & Submissions
 
-## 📞 Concerns
-If you have any concerns, encounter any issues, or require assistance, please feel free to reach out to your respective leads.
+All post-workshop activities, detailed instructions, and grading criteria are published directly in the **LMS**.
 
-Let us continue working together to grow, innovate, and advance in our technological endeavors.
+Participants are responsible for reviewing their LMS module for:
+*   Specific activity requirements
+*   Submission deadlines
+*   Deployment instructions *(if required)*
+*   Evaluation criteria
+
+---
+
+## Deployment (If Required)
+
+Some workshops may require hosting your project using GitHub Pages or other platforms. 
+*   **Deployment must be done from your personal repository.**
+*   A detailed deployment guide will be made available in the LMS when applicable.
+
+---
+
+## Support
+
+If you encounter technical issues related to:
+*   Git setup
+*   Repository configuration
+*   File structure
+*   Deployment
+
+Please contact your respective leads for assistance. Learning development workflows takes practice, and mistakes are a normal and expected part of the learning process.
+
+> **Looking Ahead:** This repository will continue to be updated as new workshops are released throughout the 2526 term. Let us build with clarity, consistency, and continuous improvement!
