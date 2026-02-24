@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskCraft — Professional To-Do App</title>
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-layout">
+        <!-- Sidebar Navigation & Branding -->
+        <aside class="app-sidebar">
+            <div class="sidebar-header">
+                <h1><i class="fa-solid fa-check-double text-primary"></i> TaskCraft</h1>
+                <p>Manage your tasks efficiently.</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active">
+                    <i class="fa-solid fa-inbox"></i> All Tasks
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-regular fa-calendar"></i> Today
+                </a>
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-layer-group"></i> Projects
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <a href="#" class="nav-item">
+                    <i class="fa-solid fa-gear"></i> Settings
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Task Area -->
+        <main class="app-main">
+            <!-- App Header Context -->
+            <header class="content-header">
+                <h2>All Tasks</h2>
+                <div class="stats-container">
+                    <span id="total-tasks">Total: 0</span>
+                    <span id="completed-tasks">Completed: 0</span>
+                </div>
+            </header>
+
+            <div class="content-body">
+                <!-- Form to add a new task -->
+                <form id="task-form" class="task-form">
+                    <div class="input-wrapper">
+                        <input 
+                            type="text" 
+                            id="task-input" 
+                            placeholder="What needs to be done?" 
+                            aria-label="New task input"
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="btn-primary" aria-label="Add Task">
+                            <i class="fa-solid fa-plus"></i> Add
+                        </button>
+                    </div>
+                </form>
+
+                <!-- List to display tasks -->
+                <ul id="task-list" class="task-list" aria-label="Task list">
+                    <!-- Tasks will be injected here by JavaScript -->
+                </ul>
+                
+                <!-- Empty state illustration container -->
+                <div id="empty-state" class="empty-state hidden">
+                    <i class="fa-solid fa-clipboard-list empty-icon"></i>
+                    <p>No tasks yet. Add one above to get started!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Application Logic -->
+    <script src="index.js"></script>
+</body>
+</html>
