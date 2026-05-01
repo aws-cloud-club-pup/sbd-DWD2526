@@ -8,7 +8,9 @@
 
 ## Overview
 
-Install Vite with React, then run the usual dev/build workflow.
+- Install Vite with React
+- Run the dev server and verify it loads
+- Build and preview a production build
 
 ## Prerequisites
 
@@ -20,25 +22,45 @@ Install Vite with React, then run the usual dev/build workflow.
 2. Run the installer and finish setup.
 3. Verify: `node -v`
 
+> ✅ **EXPECTED RESULT:** `node -v` prints a version like `v18.x.x` or newer.
+
 ## Steps
 
-1. Create a new Vite app:
-	- npm: `npm create vite@latest my-app`
-	- pnpm: `pnpm create vite@latest my-app`
-   ![Setup 1](image.png)
-2. When prompted, choose:
-	- Framework: **React**
+### Step 1 — Create a Vite app
 
-   ![React](image-1.png)
-	- Variant: **React + TypeScript** (recommended) or **React**
+Run one of these commands:
 
-   ![alt text](image-2.png)
-3. Move into the project folder: `cd my-app`.
-4. Install dependencies: `npm install` or `pnpm install`.
-5. Start the dev server: `npm run dev`.
-6. Open the local URL printed in the terminal to verify the app loads.
-7. Build for production: `npm run build`.
-8. Preview the production build locally: `npm run preview`.
+- npm: `npm create vite@latest my-app`
+- pnpm: `pnpm create vite@latest my-app`
+
+![Setup 1](image.png)
+
+### Step 2 — Choose React
+
+When prompted, choose:
+
+- Framework: **React**
+- Variant: **React + TypeScript** (recommended) or **React**
+
+![React](image-1.png)
+
+![alt text](image-2.png)
+
+### Step 3 — Install and run
+
+1. Move into the project folder: `cd my-app`.
+2. Install dependencies: `npm install` or `pnpm install`.
+3. Start the dev server: `npm run dev`.
+4. Open the local URL printed in the terminal to verify the app loads.
+
+> ✅ **EXPECTED RESULT:** You see the default Vite + React page in your browser.
+
+### Step 4 — Build and preview (Optional)
+
+1. Build for production: `npm run build`.
+2. Preview the production build locally: `npm run preview`.
+
+> ✅ **EXPECTED RESULT:** The preview URL loads the production build.
 
  ![React](image-3.png)
 ## Troubleshooting
