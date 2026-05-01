@@ -45,7 +45,3 @@ Install Kiro IDE, then install the Figma Power (Design to Code) so Kiro can use 
 
 - Do not commit local tokens or secrets.
 - Installing a power registers its MCP server automatically.
-
-## Images
-
-![Replace with Kiro Powers panel screenshot](./images/figma-power-install.png)
