@@ -14,6 +14,12 @@ Install Vite with React, then run the usual dev/build workflow.
 
 - Node.js 18+ and npm or pnpm
 
+## Install Node.js
+
+1. Download the LTS installer: https://nodejs.org/en/download
+2. Run the installer and finish setup.
+3. Verify: `node -v`
+
 ## Steps
 
 1. Create a new Vite app:
